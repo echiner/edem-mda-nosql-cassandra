@@ -26,10 +26,10 @@ cqlsh> SELECT cluster_name, listen_address, release_version FROM system.local;
 
 ## Exercises
 
-* [Exercise 1: Basic syntax](Exercises/Exercise1)
-* [Exercise 2: Creating a Data Model](Exercises/Exercise2)
-* [Exercise 3: Inserting and reading data](Exercises/Exercise3)
-* [Post Work: Ingesting and analyzing data in real-time](Exercises/PostWork)
+* [**Exercise 1**: Basic syntax](Exercises/Exercise1)
+* [**Exercise 2**: Creating a Data Model](Exercises/Exercise2)
+* [**Exercise 3**: Inserting and reading data](Exercises/Exercise3)
+* [**Exercise 4**: Ingesting and analyzing data in real-time](Exercises/Exercise4)
 
 ## Understanding the components
 
