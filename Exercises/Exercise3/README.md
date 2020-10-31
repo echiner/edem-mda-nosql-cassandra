@@ -35,7 +35,7 @@ We will create a new workflow in Apache NiFi with just two processors:
 
 At the end, your NiFi workflow should look something like this:
 
-![Sensor Data NiFi Workflow](../img/sensordata-nifi.png)
+![Sensor Data NiFi Workflow](../../img/sensordata-nifi.png)
 
 Now that we are inserting data, let's query it. In Apache Zeppelin, we are going to create a simple dashboard to visualize machine and sensor data.
 
@@ -43,7 +43,7 @@ Create new notebook, create a parametrized paragraph (you can select machine and
 
 The notebook should look something like this:
 
-![Sensor Data Zeppelin Notebook](../img/sensordata-zeppelin.png)
+![Sensor Data Zeppelin Notebook](../../img/sensordata-zeppelin.png)
 
 ### Deliverables
 
