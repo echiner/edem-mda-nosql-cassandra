@@ -19,8 +19,8 @@ First we will create the table which will store the sensor data. This is the dat
 
 * **Machine ID**: Identifies the machine we are gathering data from (there can be many)
 * **Sensor ID**: Identifies which sensor (from a machine) is sending the data
-* **Timestamp**: When the observation was made
-* **Observation Type**: The metric we are measuring
+* **Event Timestamp**: When the observation was made
+* **Observation Type**: The metric we are measuring (e.g. Temperature, Pressure, Humidity...)
 * **Observation Value**: The metric value
 
 Once the table is created, then we need to start inserting data. Given that we don't have machines or sensors, we will simulate it.
@@ -33,7 +33,7 @@ We will create a new workflow in Apache NiFi with just two processors:
 * **PutCassandraXX**: This one inserts into Cassandra. Feel free to either use PutCassandraQL or PutCassandraRecord.
   * **TIP**: you will need to add the "CassandraSessionProvider" pointing to the database ("cassandra:9042")
 
-At the end, your NiFi workflow should look something like this:
+At the end, your NiFi workflow should look something like this, but be creative:
 
 ![Sensor Data NiFi Workflow](../../img/sensordata-nifi.png)
 
@@ -41,7 +41,7 @@ Now that we are inserting data, let's query it. In Apache Zeppelin, we are going
 
 Create new notebook, create a parametrized paragraph (you can select machine and sensor) which queries the table an collects the observations for the different metrics, visualizing it in a graph.
 
-The notebook should look something like this:
+The notebook should look something like this, but also be creative:
 
 ![Sensor Data Zeppelin Notebook](../../img/sensordata-zeppelin.png)
 
