@@ -22,10 +22,10 @@ cqlsh> describe tables;
 cqlsh> SELECT cluster_name, listen_address, release_version FROM system.local;
 
 # Create a new keyspace
-cqlsh> CREATE KEYSPACE dlp WITH  replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
+cqlsh> CREATE KEYSPACE edem WITH  replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
 
 # Create a new table
-cqlsh> CREATE TABLE dlp.students (
+cqlsh> CREATE TABLE edem.students (
     studentid uuid,
     name text,
     age int,
@@ -33,15 +33,15 @@ cqlsh> CREATE TABLE dlp.students (
 );
 
 # Query it
-cqlsh> select * from dlp.students;
+cqlsh> select * from edem.students;
 
 # Let's insert some data
-cqlsh> insert into dlp.students (studentid, name, age) values (now(), 'John Doe', 25);
-cqlsh> insert into dlp.students (studentid, name, age) values (now(), 'Alice', 22);
-cqlsh> insert into dlp.students (studentid, name, age) values (now(), 'Bob', 22) USING TTL 30;
+cqlsh> insert into edem.students (studentid, name, age) values (now(), 'John Doe', 25);
+cqlsh> insert into edem.students (studentid, name, age) values (now(), 'Alice', 22);
+cqlsh> insert into edem.students (studentid, name, age) values (now(), 'Bob', 22) USING TTL 30;
 
 # And query (several times)
-cqlsh> select * from dlp.students;
+cqlsh> select * from edem.students;
 ```
 
 **Exercise 1**:

@@ -10,7 +10,7 @@ Configure the Cassandra interpreter so it points to Cassandra:
 
 1. Open the "Interpreter" configuration (right hand side, under "anonymous")
 2. Search for "cassandra"
-3. Update the "cassandra.hosts" to "cassandra" (previously "localhost"), and restart the Interpreter
+3. Click "Edit", update the "cassandra.hosts" to "cassandra" (previously "localhost"), and restart the Interpreter
 4. Create a new note ("Notebook" menu on the top --> "+ Create new note"). You can select "cassandra" as the default Interpreter
 
 ## Exercise

@@ -44,9 +44,9 @@ This table includes all required details:
 
 | Component | Ports | URL/Comments |
 | ------------- | ------------- | ------------- |
-| **Apache Cassandra** | N/A  | N/A  |
+| **Apache Cassandra** | 9042  | N/A  |
 | **CQL Shell** | N/A  | N/A  |
-| **Apache NiFi** | 8080  | http://localhost:8080/nifi  |
+| **Apache NiFi** | 8888  | http://localhost:8888/nifi  |
 | **Apache Zeppelin** | 9999  | http://localhost:9999/  |
 
 ## Documentation
