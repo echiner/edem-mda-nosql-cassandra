@@ -54,7 +54,7 @@ This table includes all required details:
 | ------------- | ------------- | ------------- | ------------- |
 | **Apache Cassandra** | 9042  | N/A  | N/A  |
 | **CQL Shell** | N/A  | N/A  | N/A  |
-| **Apache NiFi** | 8888  | https://localhost:8443/nifi  | admin / ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB |
+| **Apache NiFi** | 8443  | https://localhost:8443/nifi  | admin / ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB |
 | **Apache Zeppelin** | 9999  | http://localhost:9999/  | N/A |
 
 ## Documentation
