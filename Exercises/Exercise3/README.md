@@ -5,7 +5,9 @@
 With the setup from the previous exercises should be enough to perform this exercise.
 You will need:
 
-* Apache NiFi running: http://localhost:8888/nifi
+* Apache NiFi running: https://localhost:8443/nifi
+  * **Username**: admin
+  * **Password**: ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB
 * Apache Zeppelin running: http://localhost:9999
 * Cassandra running
 

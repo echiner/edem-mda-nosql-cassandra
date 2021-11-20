@@ -23,6 +23,14 @@ docker-compose run cqlsh
 # In the CQL prompt, check the config
 cqlsh> SELECT cluster_name, listen_address, release_version FROM system.local;
 ```
+You should see something like this:
+
+```
+ cluster_name | listen_address | release_version
+--------------+----------------+-----------------
+ Test Cluster |     172.26.0.2 |           4.0.1
+
+```
 
 ## Exercises
 
@@ -42,12 +50,12 @@ This architecture will lauch the following components:
 
 This table includes all required details:
 
-| Component | Ports | URL/Comments |
-| ------------- | ------------- | ------------- |
-| **Apache Cassandra** | 9042  | N/A  |
-| **CQL Shell** | N/A  | N/A  |
-| **Apache NiFi** | 8888  | http://localhost:8888/nifi  |
-| **Apache Zeppelin** | 9999  | http://localhost:9999/  |
+| Component | Ports | URL | Credentials |
+| ------------- | ------------- | ------------- | ------------- |
+| **Apache Cassandra** | 9042  | N/A  | N/A  |
+| **CQL Shell** | N/A  | N/A  | N/A  |
+| **Apache NiFi** | 8888  | https://localhost:8443/nifi  | admin / ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB |
+| **Apache Zeppelin** | 9999  | http://localhost:9999/  | N/A |
 
 ## Documentation
 

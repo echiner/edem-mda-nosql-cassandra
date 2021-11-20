@@ -40,7 +40,7 @@ cqlsh> insert into edem.students (studentid, name, age) values (now(), 'John Doe
 cqlsh> insert into edem.students (studentid, name, age) values (now(), 'Alice', 22);
 cqlsh> insert into edem.students (studentid, name, age) values (now(), 'Bob', 22) USING TTL 30;
 
-# And query (several times)
+# And query (several times, for example try again in 1 minute)
 cqlsh> select * from edem.students;
 ```
 
@@ -49,7 +49,7 @@ cqlsh> select * from edem.students;
 Take a look at the documentation (http://cassandra.apache.org/doc/3.11/cql/index.html) and understand what we are doing.
 We are specially interested in the following:
 
-* Data Types: http://cassandra.apache.org/doc/3.11/cql/types.html#native-types
-* Keyspace creation: http://cassandra.apache.org/doc/3.11/cql/ddl.html#create-keyspace
-* Table creation: http://cassandra.apache.org/doc/3.11/cql/ddl.html#create-table
-* Insert data: http://cassandra.apache.org/doc/3.11/cql/dml.html#insert
+* **Data Types**: http://cassandra.apache.org/doc/3.11/cql/types.html#native-types
+* **Keyspace creation**: http://cassandra.apache.org/doc/3.11/cql/ddl.html#create-keyspace
+* **Table creation**: http://cassandra.apache.org/doc/3.11/cql/ddl.html#create-table
+* **Insert data**: http://cassandra.apache.org/doc/3.11/cql/dml.html#insert
