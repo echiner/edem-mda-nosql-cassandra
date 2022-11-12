@@ -2,7 +2,7 @@
 
 ## Introduction
 
-<img width="250" src="http://cassandra.apache.org/img/cassandra_logo.png">
+![Apache Cassandra Logo](img/cassandra-logo.png)
 
 In this section we will setup **[Apache Cassandra](http://cassandra.apache.org/)** and read/write data from it.
 
