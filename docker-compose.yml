@@ -2,18 +2,22 @@ version: '2'
 
 services:
 
+  # NOSQL Database - Apache Cassandra
   cassandra:
     image: cassandra:latest
 
+  # Cassandra CQL Shell
   cqlsh:
     image: cassandra:latest
     entrypoint: cqlsh cassandra
   
+  # Notebook server: Apache Zeppelin
   zeppelin:
     image: apache/zeppelin:0.8.1
     ports: 
       - 9999:8080
 
+  # Data Ingestion Tool: Apache NiFi
   nifi:
     image: apache/nifi:latest
     container_name: nifi

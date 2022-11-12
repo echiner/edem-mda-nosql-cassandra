@@ -23,6 +23,7 @@ cqlsh> SELECT cluster_name, listen_address, release_version FROM system.local;
 
 # Create a new keyspace
 cqlsh> CREATE KEYSPACE edem WITH  replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
+# A warning will be shown (since we only have a node) --> Fix it (drop keyspace and recreate with correct replication factor)
 
 # Create a new table
 cqlsh> CREATE TABLE edem.students (
@@ -46,10 +47,17 @@ cqlsh> select * from edem.students;
 
 **Exercise 1**:
 
-Take a look at the documentation (http://cassandra.apache.org/doc/3.11/cql/index.html) and understand what we are doing.
+Take a look at the documentation (https://cassandra.apache.org/doc/4.0/cassandra/cql/index.html) and understand what we are doing.
 We are specially interested in the following:
 
-* **Data Types**: http://cassandra.apache.org/doc/3.11/cql/types.html#native-types
-* **Keyspace creation**: http://cassandra.apache.org/doc/3.11/cql/ddl.html#create-keyspace
-* **Table creation**: http://cassandra.apache.org/doc/3.11/cql/ddl.html#create-table
-* **Insert data**: http://cassandra.apache.org/doc/3.11/cql/dml.html#insert
+* **Data Types**: https://cassandra.apache.org/doc/4.0/cassandra/cql/types.html#native-types
+* **Keyspace creation**: https://cassandra.apache.org/doc/4.0/cassandra/cql/ddl.html#create-keyspace-statement
+* **Table creation**: https://cassandra.apache.org/doc/4.0/cassandra/cql/ddl.html#create-table-statement
+* **Insert data**: https://cassandra.apache.org/doc/4.0/cassandra/cql/dml.html#insert-statement
+
+**Exercise 2**:
+
+Discuss in the class what happened in the following cases:
+
+1. When we created the keyspace
+2. With the data we inserted

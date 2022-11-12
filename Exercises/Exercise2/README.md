@@ -41,7 +41,7 @@ We want to create the tables required for a persistent messaging system similar 
   * Retrieve my groups and conversations
   * Remove a single message
 
-**Deliverable**:
+**Deliverables**:
 
 * DDL scripts for the required table(s)
 * Explanation of the data model

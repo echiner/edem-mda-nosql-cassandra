@@ -11,14 +11,14 @@ In this section we will setup **[Apache Cassandra](http://cassandra.apache.org/)
 Use the following command to start all the components:
 
 ```shell
-docker-compose up -d
+docker compose up -d
 ```
 
 As you will see, looks like one is missing. It is the CQL Shell, which is launched interactively:
 
 ```shell
 # Start the CQL container, which points to the Cassandra database
-docker-compose run cqlsh
+docker compose run cqlsh
 
 # In the CQL prompt, check the config
 cqlsh> SELECT cluster_name, listen_address, release_version FROM system.local;
@@ -28,8 +28,7 @@ You should see something like this:
 ```
  cluster_name | listen_address | release_version
 --------------+----------------+-----------------
- Test Cluster |     172.26.0.2 |           4.0.1
-
+ Test Cluster |     172.23.0.3 |           4.0.7
 ```
 
 ## Exercises
@@ -59,4 +58,4 @@ This table includes all required details:
 
 ## Documentation
 
-* http://cassandra.apache.org/doc/3.11/
+* https://cassandra.apache.org/doc/4.0/index.html
