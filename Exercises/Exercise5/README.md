@@ -9,6 +9,8 @@ In this optional exercise we will be testing two more NOSQL database we have vie
 
 ## Graph Database: Neo4j
 
+![Neo4j Logo](../img/Neo4j-logo_color.png)
+
 First we will run the latest version of Neo4j using Docker:
 
 ```
@@ -59,10 +61,12 @@ The above query will return '0' since we don't have any data. So now feel free t
 
 ## Document Database: MongoDB
 
+![Neo4j Logo](../img/mongodb-logo.png)
+
 For this part we have created a simple Docker Compose with two components:
 
 * **MongoDB**: The document database itself.
-* **Mongo Express**: 
+* **Mongo Express**: User interface for interacting with the database.
 
 So first we will launch the components using Docker Compose:
 
