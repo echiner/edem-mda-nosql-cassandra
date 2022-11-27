@@ -9,7 +9,7 @@ In this optional exercise we will be testing two more NOSQL database we have vie
 
 ## Graph Database: Neo4j
 
-![Neo4j Logo](../img/neo4j-logo.png)
+![Neo4j Logo](../../img/neo4j-logo.png)
 
 First we will run the latest version of Neo4j using Docker:
 
@@ -61,7 +61,7 @@ The above query will return '0' since we don't have any data. So now feel free t
 
 ## Document Database: MongoDB
 
-![MongoDB Logo](../img/mongodb-logo.png)
+![MongoDB Logo](../../img/mongodb-logo.png)
 
 For this part we have created a simple Docker Compose with two components:
 
