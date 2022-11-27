@@ -36,7 +36,9 @@ You should see something like this:
 * [**Exercise 1**: Basic syntax](Exercises/Exercise1)
 * [**Exercise 2**: Creating a Data Model](Exercises/Exercise2)
 * [**Exercise 3**: Inserting and reading data](Exercises/Exercise3)
-* [**Exercise 4**: Ingesting and analyzing data in real-time](Exercises/Exercise4)
+* [**Exercise 4** (Post-work): Ingesting and analyzing data in real-time](Exercises/Exercise4)
+* [**Exercise 5** (Optional): Testing other NOSQL databases (Neo4j and MongoDB)](Exercises/Exercise5)
+
 
 ## Understanding the components
 
